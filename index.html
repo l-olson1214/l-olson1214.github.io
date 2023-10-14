@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
+    <div class="hero-image">
+       <!--  <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>-->
 
-<h1>Soon to be my portfolio </h1>
+        <div class="hero-text">
+            <h1>Hi, I'm Grey!</h1>
+            <p>
+                I'm a software engineer and a creative at heart. <br/>
+                Eventually, my personal portfolio will live here!
+            </p>
+        </div>
+      </div>
 
+      <script>
+            function toggleNav() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+      </script>
 </body>
 </html>
