@@ -1,7 +1,6 @@
 body, html {
     height: 100%;
 	margin: 0;
-	background-color: #EFE4E4;
 	scroll-behavior: smooth;
 }
 
@@ -84,6 +83,7 @@ body, html {
 	flex-wrap: wrap;
 	width: 100%;
 	gap: 1rem;
+	margin-bottom: 1rem;
 }
 
 .column {
@@ -129,14 +129,12 @@ body, html {
 
 .projects .row {
 	border-radius: 16px;
-	border: 1px solid rgba(0, 175
-	
-	, 175, 0.5);
+	border: 1px solid rgba(0, 175, 175, 0.5);
+	margin-bottom: 1rem;
 }
 
 .projects .row:hover {
-	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.20);
+	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(6px);
 	-webkit-backdrop-filter: blur(6px);
@@ -155,7 +153,11 @@ body, html {
 .parallax {
 	background-image: url("background.png");
 
-	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+
+	position: fixed;
+	z-index: -1;
 
 	background-attachment: fixed;
 	background-position: center;
